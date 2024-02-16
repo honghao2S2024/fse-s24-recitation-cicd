@@ -26,3 +26,5 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run coverage
+    - name: deploy to cloud
+      run: curl "https://api.render.com/deploy/srv-cn7pr7q1hbls73dt9ir0?key=gnQZO_3d8yc"
